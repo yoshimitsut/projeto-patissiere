@@ -1,0 +1,29 @@
+// src/pages/GeneroPage.jsx
+import { useParams } from 'react-router-dom';
+import { categories } from '../data/categorias.js';
+import { Link } from 'react-router-dom';
+
+export default function GeneroPage() {
+  const { slug } = useParams();
+  const category = categories.find(cat => cat.slug === slug);
+
+  if (!category) {
+    return <div className="text-center py-10 text-red-600">Gênero não encontrado.</div>;
+  }
+
+  return (
+    <div className="max-w-6xl mx-auto px-4 py-10">
+      <h1 className="text-3xl font-bold mb-6">Produtos de {category.name}</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {category.products.map((product, idx) => (
+          <Link to={`/produtos/${slug}/${product.slug}`} key={idx}>
+            <div className="rounded shadow overflow-hidden">
+              <img src={product.image} alt={product.name} className="w-full h-auto" />
+              <div className="p-2 text-center font-medium">{product.name}</div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
