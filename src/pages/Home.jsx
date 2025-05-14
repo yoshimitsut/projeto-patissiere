@@ -8,8 +8,7 @@ export default function Home() {
   return (
     <div>
       <ProductCarousel />
-      {/* <ProductGrid /> */}
-      <CategoryGrid />
+      <ProductGrid />
     </div>
   );
 }

@@ -6,17 +6,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
-import p1 from '../assets/bolo-chocolate2.jpeg';
-import p2 from '../assets/torta-maca.jpeg';
-import p3 from '../assets/caramelo.jpeg';
-import p4 from '../assets/cheasecake.jpeg';
+import p1 from '../assets/プ2-ムースショコラキャフェ.avif';
+import p2 from '../assets/プ5-キャラメルミルフィーユ.avif';
+import p3 from '../assets/プ15-ゴーパチ５８ロール.avif';
+import p4 from '../assets/プ19-生チョコロール.avif';
 
 
 const products = [
-  { id: 1, name: 'bolo-chocolate', src: p1, alt: 'Produto 2' },
-  { id: 2, name: 'torta-maca',src: p2, alt: 'Produto 2' },
-  { id: 3, name: 'caramelo',src: p3, alt: 'Produto 3' },
-  { id: 4, name: 'cheesecake',src: p4, alt: 'Produto 4' },
+  { id: 1, name: 'ムースショコラキャフェ', src: p1, alt: 'ムースショコラキャフェ' },
+  { id: 2, name: 'キャラメルミルフィーユ',src: p2, alt: 'キャラメルミルフィーユ 2' },
+  { id: 3, name: 'ゴーパチ５８ロール',src: p3, alt: 'ゴーパチ５８ロール' },
+  { id: 4, name: '生チョコロール',src: p4, alt: '生チョコロール' },
 ];
 
 export default function ProductCarousel() {
@@ -40,11 +40,11 @@ export default function ProductCarousel() {
         {products.map((product) => (
           <SwiperSlide key={product.id}>
             <div className="overflow-hidden rounded-lg shadow-md">
-              <Link to={`/produto/${product.name}`}>  
+              <Link to={`/product/${product.name}`}>  
               <img
                 src={product.src}
                 alt={product.alt}
-                className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105"
+                className="w-full h-130 object-cover transition-transform duration-300 hover:scale-105"
               />
               </Link>
             </div>

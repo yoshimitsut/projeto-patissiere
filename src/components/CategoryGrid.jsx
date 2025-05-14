@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import boloImg from '../assets/bolo-chocolate2.jpeg';
-import macaronImg from '../assets/macaron-capa.jpeg';
-import doceImg from '../assets/doces-capa.jpeg';
+import boloImg from '../assets/ケーキ-layer.avif';
+import macaronImg from '../assets/マカロン-layer.avif';
+import doceImg from '../assets/半生菓子-layer.avif';
 
 const categories = [
   {

@@ -1,36 +1,29 @@
-// src/components/ProductGrid.jsx
-import React from 'react';
-import p1 from '../assets/bolo-chocolate2.jpeg';
-import p2 from '../assets/torta-maca.jpeg';
-import p3 from '../assets/caramelo.jpeg';
-import p4 from '../assets/cheasecake.jpeg';
-
-const products = [
-  { name: 'Bolo de Chocolate', image: p1 },
-  { name: 'Torta de Maçã', image: p2 },
-  { name: 'Caramelo', image: p3 },
-  { name: 'Cheesecake', image: p4 },
-];
+import { Link } from 'react-router-dom';
+import { categories } from '../data/categorias';
+// import ProductCard from '../components/ProductCard'; // Seu componente de produto
 
 export default function ProductGrid() {
   return (
-    <section className="w-full max-w-6xl mx-auto px-4 py-12">
-      <h2 className="text-2xl font-bold text-center mb-8">Nossos Produtos</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {products.map((product, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col items-center p-4"
-          >
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-64 object-cover rounded-md mb-4"
-            />
-            <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
-          </div>
-        ))}
-      </div>
-    </section>
+    <div className="max-w-6xl mx-auto px-4 py-10 space-y-12">
+
+      {/* Seção de Categorias */}
+      <section>
+        <h1 className="text-3xl font-bold mb-6 text-center">Product</h1>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {categories.map((cat) => (
+            <Link to={`/product/${cat.slug}`} key={cat.slug}>
+              <div className="rounded overflow-hidden shadow hover:shadow-lg transition">
+                <img
+                  src={cat.image}
+                  alt={cat.name}
+                  className="w-full h-40 object-cover"
+                />
+                <div className="text-center font-semibold py-2">{cat.name}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

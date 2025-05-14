@@ -8,10 +8,10 @@ export default function TodosProdutos() {
 
       {/* Seção de Categorias */}
       <section>
-        <h1 className="text-3xl font-bold mb-6 text-center">Categorias</h1>
+        <h1 className="text-3xl font-bold mb-6 text-center">Product</h1>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {categories.map((cat) => (
-            <Link to={`/categoria/${cat.slug}`} key={cat.slug}>
+            <Link to={`/product/${cat.slug}`} key={cat.slug}>
               <div className="rounded overflow-hidden shadow hover:shadow-lg transition">
                 <img
                   src={cat.image}
