@@ -2,16 +2,16 @@ import cakeLayer from '../assets/ケーキ-layer.avif';
 import cakeStrawberry from '../assets/ケーキ1-苺デコレーション.avif';
 import cakeFruit from '../assets/ケーキ2-フルーツデコレーション.avif';
 import cakeCheesecake from '../assets/ケーキ3-チーズケーキ.avif';
-// import cakeCheesecake2 from '../assets/ケーキ3-チーズケーキ2.avif';
+import cakeCheesecake2 from '../assets/ケーキ3-チーズケーキ2.avif';
 import cakeChocolatStrawberry from '../assets/ケーキ4-チョコ生苺デコレーション.avif';
 import cakeCreampuff from '../assets/ケーキ5-シュークリームデコレーション.avif';
-// import cakeCreampuff2 from '../assets/ケーキ5-シュークリームデコレーション2.avif';
+import cakeCreampuff2 from '../assets/ケーキ5-シュークリームデコレーション2.avif';
 import cakeMousseCafe from '../assets/ケーキ6-ムースショコラキャフェ.avif';
-//import cakeMousseCafe2 from '../assets/ケーキ6-ムースショコラキャフェ2.avif';
+import cakeMousseCafe2 from '../assets/ケーキ6-ムースショコラキャフェ2.avif';
 import cakeChocolat from '../assets/ケーキ7-ショコララーム.avif';
-//import cakeChocolat2 from '../assets/ケーキ7-ショコララーム2.avif';
+import cakeChocolat2 from '../assets/ケーキ7-ショコララーム2.avif';
 import cakeMarble from '../assets/ケーキ8-マーブル.avif';
-//import cakeMarble2 from '../assets/ケーキ8-マーブル2.avif';
+import cakeMarble2 from '../assets/ケーキ8-マーブル2.avif';
 
 import petitgateauImgLayer from '../assets/プチガトー-layer.avif';
 import petitPeachTart from '../assets/プ1-まるごと桃タルト.avif';
@@ -95,11 +95,12 @@ export const categories = [
         name: 'チーズケーキ',
         slug: 'cakeCheesecake',
         image: cakeCheesecake,
+        extraImages: [cakeCheesecake2, cakeChocolatStrawberry],
         description: '本場フランス産のチーズを使用した濃厚なチーズケーキです。'
       },{
         id: 'cake4',
         name: 'チョコ生苺デコレーション',
-        slug: '',
+        slug: 'cakeChocolatStrawberry',
         image: cakeChocolatStrawberry,
         description: 'オリジナルのスポンジケーキにフレッシュ苺とチョコの生クリームをサンド、コーティングしました。'
       },{
@@ -107,24 +108,28 @@ export const categories = [
         name: 'シュークリームデコレーション',
         slug: 'cakeCreampuff',
         image: cakeCreampuff,
+        extraImages: [cakeCreampuff2],
         description: '当店オリジナルショートケーキにプチシュークリームをデコレーションしました。'
       },{
         id: 'cake6',
         name: 'ムースショコラキャフェ',
-        slug: '',
+        slug: 'cakeMousseCafe',
         image: cakeMousseCafe,
+        extraImages: [cakeMousseCafe2],
         description: '2011年 「ジャパン・ケーキ・ショー東京」のトップ・オブ・パティシエチョコレート部門で優勝したケーキです。是非一度ご賞味ください。'
       },{
         id: 'cake7',
         name: 'ショコララーム',
         slug: 'cakeChocolat',
         image: cakeChocolat,
+        extraImages: [cakeChocolat2],
         description: 'アーモンドのチョコレート生地に生チョコレートをサンドしガナッシュでコーティングしました。'
       },{
         id: 'cake8',
         name: 'マーブル',
         slug: 'cakeMarble',
         image: cakeMarble,
+        extraImages: [cakeMarble2],
         description: 'マーブル模様が特徴のバターケーキです。塩味のきいたバタークリームとスポンジを交互に重ね仕上げました。'
       },
        
@@ -154,7 +159,7 @@ export const categories = [
       {
         id: 'petit3',
         name: 'ショートケーキ', 
-        slug: '', 
+        slug: 'petitShortcake', 
         image: petitShortcake,
         description: 'オリジナルのスポンジケーキにフレッシュ苺と生クリームをサンドしました。' 
       },
@@ -493,7 +498,7 @@ export const categories = [
       { 
         id: 'hNGashi4',
         name: 'プライムフィナンシェ', 
-        slug: 'hanNGashiFinancier', 
+        slug: 'hanNGashiPrimeFinancier', 
         image: hanNGashiPrimeFinancier,
         description: '' 
       },

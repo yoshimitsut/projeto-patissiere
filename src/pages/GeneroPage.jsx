@@ -1,6 +1,6 @@
 // src/pages/GeneroPage.jsx
 import { useParams } from 'react-router-dom';
-import { categories } from '../data/categorias.js';
+import { categories } from '../data/categories.js';
 import { Link } from 'react-router-dom';
 
 export default function GeneroPage() {
@@ -12,11 +12,11 @@ export default function GeneroPage() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold mb-6">Produtos de {category.name}</h1>
+    <div className="max-w-5xl mx-auto px-4 py-10">
+      <h1 className="text-3xl font-bold mb-6">Genero Page{category.name}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {category.products.map((product, idx) => (
-          <Link to={`/produtos/${slug}/${product.slug}`} key={idx}>
+          <Link to={`/product/${slug}/${product.slug}`} key={idx}>
             <div className="rounded shadow overflow-hidden">
               <img src={product.image} alt={product.name} className="w-full h-auto" />
               <div className="p-2 text-center font-medium">{product.name}</div>
