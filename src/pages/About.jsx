@@ -1,56 +1,147 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import bgImage from '../assets/about-background.webp';
+import about1 from '../assets/about1.avif';
+import about2 from '../assets/about2.avif';
+import about3 from '../assets/about3.avif';
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function About() {
   return (
-    <div className="p-8 text-left">
-      <h1 className="text-gray-700">
-      A Essência da Pâtisserie H.Yuji
-      </h1>
-      <h1>Doces</h1>
-      <p>
-      Entre as frutas selecionadas e os diversos ingredientes disponíveis,
-      combinamos os materiais e expressamos os cinco sabores com nossa própria sensibilidade.
-      Mesmo usando os mesmos ingredientes, é difícil fazer exatamente o mesmo doce.
-      No entanto, como profissionais, enfrentamos esses desafios diariamente,
-      nos dedicando e aprimorando constantemente em contato com os ingredientes.
-      </p>
-      <br />
-      <p>
-      Nosso Compromisso com os Ingredientes
-      Acreditamos que a base de um doce memorável começa na seleção cuidadosa dos ingredientes.
-      Provamos cada matéria-prima inúmeras vezes, imaginando sabores, texturas e combinações.
-      Transformamos essas ideias em criações reais, refinando cada detalhe a cada tentativa.
+    <div
+      className="w-full bg-no-repeat bg-top flex flex-col items-center"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        //backgroundSize: 'cover',
+        backgroundPosition: 'top',
+        margin: '-23px 0 0 0'
+      }}
+    >
+      {/* TOPO COM BACKGROUND VISÍVEL */}
+      <div className="h-40 w-full flex items-center justify-center">
+        {/* Se quiser título aqui, descomente abaixo */}
+        {/* <h1 className="text-white text-4xl font-bold drop-shadow-lg">Título Topo</h1> */}
+      </div>
 
-      Mesmo os melhores ingredientes precisam de mãos e corações atentos para revelar todo o seu potencial.
-      Por isso, valorizamos profundamente não apenas o que usamos, mas como usamos.
+      {/* CONTEÚDO CENTRAL */}
+      <div className="bg-white bg-opacity-90 p-10 sm:p-16 max-w-4xl w-full mx-auto shadow-2xl rounded-2xl mb-16">
+        <motion.h1
+          className="text-3xl font-bold text-center text-gray-700 mb-12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          variants={fadeIn}
+        >
+          A Essência da Pâtisserie H.Yuji
+        </motion.h1>
 
-      Nosso processo começa muito antes do doce chegar à vitrine —
-      começa no respeito por quem produz, na escolha consciente de cada insumo
-      e no desejo sincero de proporcionar uma experiência única a quem saboreia.
+        {/* Tópico 1 */}
+        <motion.div
+          className="grid md:grid-cols-2 gap-12 mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          variants={fadeIn}
+        >
+          <div className="text-gray-800">
+            <h2 className="text-xl font-bold mb-2">Doces</h2>
+            <p>
+              Entre as frutas selecionadas e os diversos ingredientes disponíveis,
+              combinamos os materiais e expressamos os cinco sabores com nossa própria sensibilidade.
+              Mesmo usando os mesmos ingredientes, é difícil fazer exatamente o mesmo doce.
+              No entanto, como profissionais, enfrentamos esses desafios diariamente,
+              nos dedicando e aprimorando constantemente em contato com os ingredientes.
+            </p>
+          </div>
+          <div className="flex items-center justify-center">
+            <img
+              src={about1}
+              alt="Doces"
+              className="rounded-xl shadow-lg max-h-[400px] object-cover"
+            />
+          </div>
+        </motion.div>
 
-      Carregamos conosco os valores dos produtores, a dedicação da nossa equipe e o compromisso de emocionar.
-      Mais do que doces: entregamos histórias feitas com alma.
-      </p>
-      <br />
-      <p>
-      Os Cinco Ingredientes Principais do Nosso Pâtissier
-      Leite
-      Utilizamos leite de origem animal para trazer uma textura cremosa e um sabor encorpado e equilibrado.
+        {/* Tópico 2 */}
+        <motion.div
+          className="grid md:grid-cols-2 gap-12 mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          variants={fadeIn}
+        >
+          <div className="flex items-center justify-center order-2 md:order-1">
+            <img
+              src={about2}
+              alt="Compromisso com ingredientes"
+              className="rounded-xl shadow-lg max-h-[400px] object-cover"
+            />
+          </div>
+          <div className="text-gray-800 order-1 md:order-2">
+            <h2 className="text-xl font-bold mb-2">Nosso Compromisso com os Ingredientes</h2>
+            <p>
+              Acreditamos que a base de um doce memorável começa na seleção cuidadosa dos ingredientes.
+              Provamos cada matéria-prima inúmeras vezes, imaginando sabores, texturas e combinações.
+              Transformamos essas ideias em criações reais, refinando cada detalhe a cada tentativa.
+              <br /><br />
+              Mesmo os melhores ingredientes precisam de mãos e corações atentos para revelar todo o seu potencial.
+              Por isso, valorizamos profundamente não apenas o que usamos, mas como usamos.
+              <br /><br />
+              Nosso processo começa muito antes do doce chegar à vitrine —
+              começa no respeito por quem produz, na escolha consciente de cada insumo
+              e no desejo sincero de proporcionar uma experiência única a quem saboreia.
+              <br /><br />
+              Carregamos conosco os valores dos produtores, a dedicação da nossa equipe e o compromisso de emocionar.
+              Mais do que doces: entregamos histórias feitas com alma.
+            </p>
+          </div>
+        </motion.div>
 
-      Trigo
-      A escolha do trigo é feita cuidadosamente, variando entre o nacional e o importado, de acordo com a textura e o sabor desejados para cada doce.
-
-      Açúcar
-      Usamos açúcar de cana de Okinawa, como o açúcar de Kibi, para dar profundidade de sabor e uma textura mais úmida aos nossos produtos.
-
-      Ovos
-      Selecionamos ovos locais, ajustando-os conforme necessário para criar aquela textura leve e fofa, além de acentuar o sabor rico da gema.
-
-      Chocolate
-      O chocolate utilizado em nossas sobremesas e bombons é importado, com destaque para o chocolate belga, conhecido por sua alta qualidade e sabor intenso.
-
-      Esses são os ingredientes que trazem qualidade e autenticidade aos nossos doces. Nosso compromisso é com a excelência, usando o melhor de cada matéria-prima para oferecer uma experiência única e inesquecível.
-      </p>
+        {/* Tópico 3 */}
+        <motion.div
+          className="grid md:grid-cols-2 gap-12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          variants={fadeIn}
+        >
+          <div className="text-gray-800">
+            <h2 className="text-xl font-bold mb-2">Os Cinco Ingredientes Principais do Nosso Pâtissier</h2>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>
+                <strong>Leite:</strong> textura cremosa e sabor equilibrado.
+              </li>
+              <li>
+                <strong>Trigo:</strong> nacional ou importado, conforme o doce.
+              </li>
+              <li>
+                <strong>Açúcar:</strong> de cana de Okinawa, mais sabor e umidade.
+              </li>
+              <li>
+                <strong>Ovos:</strong> locais, para leveza e sabor rico.
+              </li>
+              <li>
+                <strong>Chocolate:</strong> importado, com destaque ao belga.
+              </li>
+            </ul>
+          </div>
+          <div className="flex items-center justify-center">
+            <img
+              src={about3}
+              alt="Ingredientes"
+              className="rounded-xl shadow-lg max-h-[400px] object-cover"
+            />
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 }

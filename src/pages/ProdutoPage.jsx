@@ -1,10 +1,9 @@
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { categories } from '../data/categories';
 import { useEffect, useState } from 'react';
 
 export default function ProdutoPage() {
   const { slugCategorie, slugProduct } = useParams();
-  //const navigate = useNavigate();
 
   const categoria = categories.find(c => c.slug === slugCategorie);
   const produtos = categoria?.products || [];
