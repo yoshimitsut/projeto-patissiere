@@ -6,6 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
+
+import { motion } from 'framer-motion';
+
 import p1 from '../assets/プ2-ムースショコラキャフェ.avif';
 import p2 from '../assets/プ5-キャラメルミルフィーユ.avif';
 import p3 from '../assets/プ15-ゴーパチ５８ロール.avif';
@@ -13,10 +16,10 @@ import p4 from '../assets/プ19-生チョコロール.avif';
 
 
 const products = [
-  { id: 1, name: 'ムースショコラキャフェ', src: p1, alt: 'ムースショコラキャフェ' },
-  { id: 2, name: 'キャラメルミルフィーユ',src: p2, alt: 'キャラメルミルフィーユ 2' },
-  { id: 3, name: 'ゴーパチ５８ロール',src: p3, alt: 'ゴーパチ５８ロール' },
-  { id: 4, name: '生チョコロール',src: p4, alt: '生チョコロール' },
+  { id: 1, name: 'petitgateau/petitMousseCafe', src: p1, alt: 'ムースショコラキャフェ' },
+  { id: 2, name: 'petitgateau/petitCaramelMillefeuille',src: p2, alt: 'キャラメルミルフィーユ 2' },
+  { id: 3, name: 'petitgateau/petit58roll',src: p3, alt: 'ゴーパチ５８ロール' },
+  { id: 4, name: 'petitgateau/petitRawChocolateRoll',src: p4, alt: '生チョコロール' },
 ];
 
 export default function ProductCarousel() {
