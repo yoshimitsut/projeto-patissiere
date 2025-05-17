@@ -29,37 +29,39 @@ export default function Navbar() {
   return (
     
     <header
-      className={`fixed top-0 left-0 w-full bg-white/80 backdrop-blur-sm shadow z-50 ${
+      className={`fixed top-0 left-0 w-full bg-white/80 transition-transform duration-700 ease-in-out backdrop-blur-sm shadow z-50 ${
         showNavbar ? 'translate-y-0' : '-translate-y-full'
       } bg-transparent backdrop-blur-sm`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <div className="text-lg font-bold tracking-wide text-gray-800">
-          <Link to="/">
-            <img src={logo} alt="Logo" className="h-10 w-auto" />
-          </Link>
-        </div>
+      <nav className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center">
+  {/* Logo à esquerda */}
+  <div className="flex-shrink-0">
+    <Link to="/">
+      <img src={logo} alt="Logo" className="h-10 w-auto" />
+    </Link>
+  </div>
 
-        {/* Menu Desktop */}
-        <ul className="hidden lg:flex space-x-6 text-sm font-medium text-gray-700">
-          <li><Link to="/" className="hover:text-blue-600 transition-colors duration-200 text-base sm:text-lg lg:text-xl">Home</Link></li>
-          <li><Link to="/about" className="hover:text-blue-600 transition-colors duration-200 text-base sm:text-lg lg:text-xl">Sobre</Link></li>
-          <li><Link to="/product" className="hover:text-blue-600 transition-colors duration-200 text-base sm:text-lg lg:text-xl">Product</Link></li>
-          <li><Link to="/chef" className="hover:text-blue-600 transition-colors duration-200 text-base sm:text-lg lg:text-xl">Chef</Link></li>
-          <li><Link to="/access" className="hover:text-blue-600 transition-colors duration-200 text-base sm:text-lg lg:text-xl">Access</Link></li>
-          <li><Link to="/onlineshop" className="hover:text-blue-600 transition-colors duration-200 text-base sm:text-lg lg:text-xl">Online Shop</Link></li>
-        </ul>
+  {/* Menu Desktop - centralizado */}
+  <ul className="hidden lg:flex absolute left-1/2 -translate-x-1/2 space-x-6 text-sm font-medium text-gray-700">
+    <li><Link to="/" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Home</Link></li>
+    <li><Link to="/about" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Sobre</Link></li>
+    <li><Link to="/product" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Product</Link></li>
+    <li><Link to="/chef" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Chef</Link></li>
+    <li><Link to="/access" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Access</Link></li>
+    <li><Link to="/onlineshop" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Online Shop</Link></li>
+  </ul>
 
-        {/* Ícone de menu sanduíche */}
-        <button
-          className="lg:hidden flex flex-col justify-center items-center w-6 h-6 space-y-1 cursor-pointer"
-          onClick={toggleMenu}
-        >
-          <span className="w-full h-1 bg-gray-800"></span>
-          <span className="w-full h-1 bg-gray-800"></span>
-          <span className="w-full h-1 bg-gray-800"></span>
-        </button>
-      </nav>
+  {/* Ícone do menu mobile - à direita */}
+  <button
+    className="ml-auto lg:hidden flex flex-col justify-center items-center w-6 h-6 space-y-1 cursor-pointer"
+    onClick={toggleMenu}
+  >
+    <span className="w-full h-1 bg-gray-800"></span>
+    <span className="w-full h-1 bg-gray-800"></span>
+    <span className="w-full h-1 bg-gray-800"></span>
+  </button>
+</nav>
+
 
       {/* Menu mobile */}
       <div

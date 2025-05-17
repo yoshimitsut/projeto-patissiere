@@ -23,7 +23,7 @@ function App() {
         <ScrollToTop />
         <Navbar/>
 
-        <main className="flex-grow pt-20 sm:pt-24">
+        <main className="flex-grow pt-20 sm:pt-24 bg-[#fdfbf8]">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

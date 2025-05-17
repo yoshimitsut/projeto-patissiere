@@ -24,13 +24,13 @@ export default function ProdutoPage() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-1 space-y-8">
+    <div className="max-w-4xl mx-auto p-10 space-y-8 bg-white shadow">
       
       {/* Botões de navegação */}
       <div className="flex justify-between items-center">
         <Link
           to={`/product/`}
-          className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
+          className="px-4 py-2 bg-[#f6b55b] hover:hover:bg-[#f6bf71] rounded"
         >
           ← Product
         </Link>
@@ -41,8 +41,8 @@ export default function ProdutoPage() {
             to={anterior ? `/product/${slugCategorie}/${anterior.slug}` : "#"}
             className={`px-4 py-2 rounded ${
               anterior
-                ? "bg-gray-200 hover:bg-gray-300"
-                : "bg-gray-100 text-gray-400 cursor-not-allowed"
+                ? "bg-[#f6b55b] hover:bg-[#f6bf71]"
+                : "bg-[#f6bf71] text-gray-400 cursor-not-allowed"
             }`}
             onClick={(e) => {
               if (!anterior) e.preventDefault();
@@ -56,8 +56,8 @@ export default function ProdutoPage() {
             to={proximo ? `/product/${slugCategorie}/${proximo.slug}` : "#"}
             className={`px-4 py-2 rounded ${
               proximo
-                ? "bg-gray-200 hover:bg-gray-300"
-                : "bg-gray-100 text-gray-400 cursor-not-allowed"
+                ? "bg-[#f6b55b] hover:bg-[#f6bf71]"
+                : "bg-[#f6b55b] text-gray-400 cursor-not-allowed"
             }`}
             onClick={(e) => {
               if (!proximo) e.preventDefault();
@@ -70,13 +70,13 @@ export default function ProdutoPage() {
       </div>
 
       {/* Conteúdo principal */}
-      <div className="grid md:grid-cols-2 gap-10 items-start">
+      <div className="grid md:grid-cols-2 gap-10 items-start ">
         {/* Galeria de Imagens */}
         <div>
           <img
             src={imagemPrincipal}
             alt={produto.name}
-            className="w-full h-96 object-cover rounded"
+            className="w-full h-96 object-cover rounded shadow"
           />
 
           {/* Miniaturas */}
