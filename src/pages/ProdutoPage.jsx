@@ -24,7 +24,7 @@ export default function ProdutoPage() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-10 space-y-8 bg-white shadow">
+    <div className="max-w-4xl mx-auto p-10 space-y-8 bg-white shadow fade-in-down">
       
       {/* Botões de navegação */}
       <div className="flex justify-between items-center">

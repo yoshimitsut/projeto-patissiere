@@ -17,7 +17,7 @@ export default function GeneroPage() {
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {category.products.map((product, idx) => (
           <Link to={`/product/${slug}/${product.slug}`} key={idx}>
-            <div className="rounded shadow hover:shadow-lg overflow-hidden transition">
+            <div className="rounded shadow hover:shadow-lg overflow-hidden transition fade-in-down">
               <img src={product.image} alt={product.name} className="w-full h-45 object-cover items-center" />
               <div className="p-2 text-center font-medium">{product.name}</div>
             </div>
