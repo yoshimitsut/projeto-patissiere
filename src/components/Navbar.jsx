@@ -44,12 +44,12 @@ export default function Navbar() {
 
       {/* Menu Desktop - centralizado */}
       <ul className="hidden lg:flex absolute left-1/2 -translate-x-1/2 space-x-6 text-sm font-medium text-gray-700">
-        <li><Link to="/" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Home</Link></li>
-        <li><Link to="/about" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Sobre</Link></li>
-        <li><Link to="/product" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Product</Link></li>
-        <li><Link to="/chef" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Chef</Link></li>
-        <li><Link to="/access" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Access</Link></li>
-        {/* <li><Link to="/onlineshop" className="hover:text-blue-600 text-base sm:text-lg lg:text-xl">Online Shop</Link></li> */}
+        <li><Link to="/" className="hover:text-[#deb172] text-base sm:text-lg lg:text-xl">Home</Link></li>
+        <li><Link to="/about" className="hover:text-[#deb172] text-base sm:text-lg lg:text-xl">Sobre</Link></li>
+        <li><Link to="/product" className="hover:text-[#deb172] text-base sm:text-lg lg:text-xl">Product</Link></li>
+        <li><Link to="/chef" className="hover:text-[#deb172] text-base sm:text-lg lg:text-xl">Chef</Link></li>
+        <li><Link to="/access" className="hover:text-[#deb172] text-base sm:text-lg lg:text-xl">Access</Link></li>
+        {/* <li><Link to="/onlineshop" className="hover:text-[#deb172] text-base sm:text-lg lg:text-xl">Online Shop</Link></li> */}
       </ul>
 
     {/* Ícone do menu mobile - à direita */}
