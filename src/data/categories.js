@@ -73,64 +73,64 @@ import hanNGashiCochillage from '../assets/半生菓子5-コキラージュ.avif
 export const categories = [
   {
     id: 'cake',
-    name: 'デコレーションケーキ',
+    name: 'Bolos',
     slug: 'cakes',
     image: cakeLayer,
     products: [
       {
         id: 'cake1',
-        name: '苺デコレーション',
+        name: 'Morango',
         slug: 'cakeStrawberry',
         image: cakeStrawberry,
-        description: 'オリジナルのスポンジケーキにフレッシュ苺と生クリームをサンドしました。'
+        description: 'Bolo de esponja original recheado com morangos frescos e chantilly.'
       },
       {
         id: 'cake2',
-        name: 'フルーツデコレーション',
+        name: 'Frutas',
         slug: 'cakeFruit',
         image: cakeFruit,
-        description: 'オリジナルのスポンジケーキにフレッシュ苺と生クリームをサンドしました。旬のフルーツをたっぷりデコレーション。'
+        description: 'Bolo feito com morangos frescos e chantilly e decorado com muitas frutas da estação.'
       },{
         id: 'cake3',
-        name: 'チーズケーキ',
+        name: 'Cheesecake',
         slug: 'cakeCheesecake',
         image: cakeCheesecake,
         extraImages: [cakeCheesecake2, cakeChocolatStrawberry],
-        description: '本場フランス産のチーズを使用した濃厚なチーズケーキです。'
+        description: 'Um cheesecake feito com queijo francês autêntico.'
       },{
         id: 'cake4',
-        name: 'チョコ生苺デコレーション',
+        name: 'Morango e chocolate',
         slug: 'cakeChocolatStrawberry',
         image: cakeChocolatStrawberry,
-        description: 'オリジナルのスポンジケーキにフレッシュ苺とチョコの生クリームをサンド、コーティングしました。'
+        description: 'Bolo recheado e coberto com morangos frescos e chantilly de chocolate.'
       },{
         id: 'cake5',
-        name: 'シュークリームデコレーション',
+        name: 'Profiteroles',
         slug: 'cakeCreampuff',
         image: cakeCreampuff,
         extraImages: [cakeCreampuff2],
-        description: '当店オリジナルショートケーキにプチシュークリームをデコレーションしました。'
+        description: 'Bolo decorado com profiteroles de creme.'
       },{
         id: 'cake6',
-        name: 'ムースショコラキャフェ',
+        name: 'Café com mousse de chocolate',
         slug: 'cakeMousseCafe',
         image: cakeMousseCafe,
         extraImages: [cakeMousseCafe2],
-        description: '2011年 「ジャパン・ケーキ・ショー東京」のトップ・オブ・パティシエチョコレート部門で優勝したケーキです。是非一度ご賞味ください。'
+        description: 'Este bolo ganhou a categoria Top of Patissier Chocolate no Japan Cake Show Tokyo em 2011. Sabor único.'
       },{
         id: 'cake7',
-        name: 'ショコララーム',
+        name: 'Chocolat Ram',
         slug: 'cakeChocolat',
         image: cakeChocolat,
         extraImages: [cakeChocolat2],
-        description: 'アーモンドのチョコレート生地に生チョコレートをサンドしガナッシュでコーティングしました。'
+        description: 'Bolo intercalado entre massa de chocolate com amêndoas e coberto com ganache.'
       },{
         id: 'cake8',
-        name: 'マーブル',
+        name: 'Mármore',
         slug: 'cakeMarble',
         image: cakeMarble,
         extraImages: [cakeMarble2],
-        description: 'マーブル模様が特徴のバターケーキです。塩味のきいたバタークリームとスポンジを交互に重ね仕上げました。'
+        description: 'Bolo mármore, finalizado com camadas alternadas de creme de manteiga salgado e pão de ló.'
       },
        
     ],
@@ -138,170 +138,170 @@ export const categories = [
 // import boloCheasecake2 from '../assets/bolo-cheasecake2.avif';
 // import boloProfiterole2 from '../assets/bolo-profiterole2.avif';
   {
-    name: 'プチガトー',
+    name: 'Doces e Minibolos',
     slug: 'petitgateau',
     image: petitgateauImgLayer,
     products: [
       { 
         id: 'petit1',
-        name: 'まるごと桃タルト', 
+        name: 'Torta de pêssego', 
         slug: 'petitPeachTart', 
         image: petitPeachTart,
-        description: '桃を贅沢にまるごとそのままタルトにしました。オリジナルカスタードとの相性も抜群です。' 
+        description: 'Uma torta luxuosa feita com pêssegos inteiros. Combina perfeitamente com nosso creme original.' 
       },
       { 
         id: 'petit2',
-        name: 'ムース・オ・ショコラキャフェ', 
+        name: 'Café com musse de chocolate', 
         slug: 'petitMousseCafe', 
         image: petitMousseCafe,
-        description: '桃を贅沢にまるごとそのままタルトにしました。オリジナルカスタードとの相性も抜群です。' 
+        description: 'Este bolo ganhou a categoria Top of Patissier Chocolate no Japan Cake Show Tokyo 2011. ' 
       },
       {
         id: 'petit3',
-        name: 'ショートケーキ', 
+        name: 'Shortcake', 
         slug: 'petitShortcake', 
         image: petitShortcake,
-        description: 'オリジナルのスポンジケーキにフレッシュ苺と生クリームをサンドしました。' 
+        description: 'Bolo de esponja recheado com morangos frescos e chantilly.' 
       },
       { 
         id: 'petit4',
-        name: 'レアチーズケーキ', 
+        name: 'Cheesecake', 
         slug: 'petitRareCheesecake', 
         image: petitRareCheesecake,
-        description: 'フランス産クリームチーズを使用したレアチーズと酸味のきいたクーリーフランボワーズを組み合わせました。' 
+        description: 'Um cheesecake (Torta de queijo doce) feito com cream cheese francês e geleia de framboesas.' 
       },
       { 
         id: 'petit5',
-        name: 'キャラメルミルフィーユ', 
+        name: 'Mil folhas de caramelo', 
         slug: 'petitCaramelMillefeuille', 
         image: petitCaramelMillefeuille,
-        description: '自家製パイを使用し、何層にも織り込んだ生地からはバターの風味が漂います。上にキャラメルクリームを絞りました。' 
+        description: 'Uma torta caseira feita com massa foleada e coberta com creme de caramelo.' 
       },
       { 
         id: 'petit6',
-        name: 'アップルパイ', 
+        name: 'Torta de maçã', 
         slug: 'petitApplePie', 
         image: petitApplePie,
-        description: 'りんごの食感にこだわり、りんごのお酒カルヴァドスとシナモンでコンポートしたものを詰め込み一層一層丁寧に織り込んだパイ生地で包んで焼き上げています。' 
+        description: 'Somos muito exigentes quanto à textura das maçãs, recheamos-as com licor de maçã Calvados e canela, envolvendo em uma massa cuidadosamente trançada, camada por camada, e as assamos.' 
       },
       { 
         id:'petit7', 
-        name: 'シュークリーム', 
+        name: 'Profiteroles', 
         slug: 'petitCreamPuff', 
         image: petitCreamPuff,
-        description: '自慢のカスタードクリームをたっぷり詰めたシュークリームです。' 
+        description: 'Um profiterole recheado com nosso creme de confeiteiro exclusivo.' 
       },
       { 
         id: 'petit8',
-        name: 'フレーズピスターシュ', 
+        name: 'Morango com pistache', 
         slug: 'petitPistachio', 
         image: petitPistachio,
-        description: '苺のムースの中にピスタチオクリームとフランボワーズのコンフィチュールを組み合わせました。' 
+        description: 'Mousse de morango recheada com creme de pistache e compota de framboesa.' 
       },
       { 
         id: 'petit9',
-        name: 'ジャン', 
+        name: 'Gianduja', 
         slug: 'petitJean', 
         image: petitJean,
-        description: 'レモン風味のクリームをナッツ風味のミルクチョコレートで包み込みました。' 
+        description: 'Creme de limão envolto em chocolate ao leite com nozes' 
       },
       { 
         id: 'petit10',
-        name: 'チーズケーキ', 
+        name: 'Minibolo Cheesecake', 
         slug: 'petitCheesecake', 
         image: petitCheesecake,
-        description: '本場フランス産のチーズを使用した濃厚なチーズケーキです。' 
+        description: 'É um cheesecake cremoso feito com queijo autêntico da França.' 
       },
       { 
         id: 'petit11',
-        name: 'ショコララーム', 
+        name: 'Chocolate com rum', 
         slug: 'petitChocolat', 
         image: petitChocolat,
-        description: 'アーモンドのチョコレート生地に生チョコクリームをサンドしガナッシュでコーティングしました。' 
+        description: 'Massa de chocolate com amêndoas recheada com creme de chocolate e coberta com ganache.' 
       },
       { 
         id: 'petit12',
-        name: 'たまごロール', 
+        name: 'rocambole', 
         slug: 'petitEggRoll', 
         image: petitEggRoll,
-        description: '読谷の地養卵を使ってバニラ風味のクリームとカスタードクリームを巻き、あっさり仕上げました。' 
+        description: '"Delicado rocambole feito com ovos, recheado com creme de baunilha e creme de confeiteiro suave, finalizado com leveza.' 
       },
       {
         id: 'petit13',
-        name: 'カスタードプリン', 
+        name: 'Purin', 
         slug: 'petitCustardPudding', 
         image: petitCustardPudding,
-        description: '昔ながらのプリンにこだわりました。三温糖で作るほろ苦いキャラメルとの相性は抜群です。' 
+        description: 'Um pudim artesanal que respeita a receita tradicional, preparado com carinho. Acompanhado de um caramelo levemente amargo feito com açúcar sanontou, que realça perfeitamente o sabor delicado do creme.' 
       },
       { 
         id: 'petit14',
-        name: 'ラスクシュー', 
+        name: 'Profiterole crocante', 
         slug: 'petitRusk', 
         image: petitRusk,
-        description: 'シュー生地の上にアーモンドクリームを絞り、2度焼きしたサクサク感をご賞味ください。' 
+        description: 'Delicie-se com a textura crocante no Profiterole, coberta com creme de amêndoas e assada duas vezes para um toque extra de sabor e crocância.' 
       },
       { 
         id: 'petit15',
-        name: 'ゴーパチ５８ロール', 
+        name: 'Rolo Gopachi 58', 
         slug: 'petit58roll', 
         image: petit58roll,
-        description: 'ふわふわしっとりチョコレート生地にフランス産チョコ生クリームとガナッシュを巻きました。 癖になる一品です。' 
+        description: 'Massa de chocolate macia e úmida, enrolada com creme fresco de chocolate francês e ganache. Um doce irresistível que você vai querer provar de novo e de novo.' 
       },
       { 
         id: 'petit16',
-        name: 'モンブラン', 
+        name: 'Mont Blanc', 
         slug: 'petitMontBlanc', 
         image: petitMontBlanc,
-        description: 'サブレ生地にたっぷりのカスタードクリームと国産和栗のペーストを絞りました。' 
+        description: 'Sobre uma base de massa sablée, aplicamos generosamente creme de confeiteiro e pasta de castanha japonesa.' 
       },
       { 
         id:'petit17', 
-        name: 'マーブル', 
+        name: 'Mármore', 
         slug: 'petitMarbleCake', 
         image: petitMarbleCake,
-        description: 'マーブル模様が特徴のバターケーキ。塩味のきいたバタークリームとスポンジを交互に重ね仕上げました。' 
+        description: 'Bolo amantegado com característica Marble. Camadas alternadas de creme de manteiga levemente salgado e massa de pão de ló, cuidadosamente finalizadas.' 
       },
       { 
         id: 'petit18',
-        name: 'コーヒゼリー', 
+        name: 'Gelatina de café', 
         slug: 'petitCoffeeJelly', 
         image: petitCoffeeJelly,
-        description: 'マスカルポーネのクリームを流し、コーヒーゼリーをのせました。' 
+        description: 'Camada generosa de creme de mascarpone, finalizada com gelatina de café.' 
       },
       { 
         id: 'petit19',
-        name: '生チョコロール', 
+        name: 'Rocambole de Chocolate', 
         slug: 'petitRawChocolateRoll', 
         image: petitRawChocolateRoll,
-        description: '生チョコガナッシュをチョコレートスポンジと生クリームで巻き上げました。' 
+        description: 'Rolo delicado de pão de ló de chocolate, envolvendo ganache de chocolate fresco e um suave creme chantilly, que derrete na boca.' 
       },
       { 
         id: 'petit20',
-        name: 'クレームブリュレ', 
+        name: 'Creme Brûlée', 
         slug: 'petitCremeBrulee', 
         image: petitCremeBrulee,
-        description: 'カリッ、トロトロの触感が癖になります。『アメリ』の大好物。ご注文頂いてからキャラメリゼ致します。' 
+        description: 'A textura crocante por fora e cremosa por dentro é simplesmente viciante. Preparado na hora com caramelização fresca sob seu pedido.' 
       },
       { 
         id: 'petit21',
-        name: 'なめらかプリン', 
+        name: 'Purin suave', 
         slug: 'petitSmoothPudding', 
         image: petitSmoothPudding,
-        description: 'とろとろのプリンと塩キャラメルソースのマリアージュをお召し上がりください。' 
+        description: 'A perfeita união do pudim aveludado com a doçura sutil do caramelo salgado.' 
       },
       { 
         id: 'petit22',
-        name: 'プリントルテ', 
+        name: 'Purin Torute', 
         slug: 'petitPuddingTorte', 
         image: petitPuddingTorte,
-        description: 'オリジナルのスポンジケーキにフレッシュ苺と生クリームをサンドし、表面にカスタードプリンをデコレーションしました。' 
+        description: 'Bolo de pão de ló recheado com morangos frescos e creme chantilly, decorado com pudim de creme.' 
       },
       { 
         id: 'petit23',
-        name: 'ショコラと木苺のケーキ', 
+        name: 'Bolo de chocolate e framboesa', 
         slug: 'petitChocolateRaspberry', 
         image: petitChocolateRaspberry,
-        description: '甘酸っぱい木苺とショコラのマリアージュ。絶品です。' 
+        description: 'A harmoniosa união entre a acidez delicada da framboesa e a intensidade do chocolate. Uma experiência gastronômica sublime.' 
       },
  
  
@@ -309,160 +309,160 @@ export const categories = [
   },
 
   {
-    name: 'マカロン',
+    name: 'Macarons',
     slug: 'macarons',
     image: macaronImgLayer,
     products: [
       { 
         id: 'macaron1',
-        name: 'マカロンパッション', 
+        name: 'Macaron Passion', 
         slug: 'macaronPassionFruit', 
         image: macaronPassionFruit,
-        description: '' 
+        description: 'Macaron sabor maracujá.' 
       },
       { 
         id: 'macaron2',
-        name: 'マカロンフランボワーズ', 
+        name: 'Macarron de Framboesa', 
         slug: 'macaronRaspberry', 
         image: macaronRaspberry,
-        description: '' 
+        description: 'Macaron sabor framboesa.' 
       },
       { 
         id: 'macaron3',
-        name: 'マカロンバレンシア', 
+        name: 'Macaron Valência', 
         slug: 'macaronValencia', 
         image: macaronValencia,
-        description: '' 
+        description: 'Macaron com sabor a Valência sabor vibrantes de laranja.' 
       },
       { 
         id: 'macaron4',
-        name: 'マカロンカフェ', 
+        name: 'Macaron Café', 
         slug: 'macaronCafe', 
         image: macaronCafe,
-        description: '' 
+        description: 'Macaron sabor Café.' 
       },
       { 
         id: 'macaron5',
-        name: 'マカロンピスタチオ', 
+        name: 'Macaron pistache', 
         slug: 'macaronPistachio', 
         image: macaronPistachio,
-        description: '' 
+        description: 'Macaron sabor Pistache.' 
       },
       { 
         id: 'macaron6',
-        name: 'マカロンバニラ', 
+        name: 'Macaron de Baunilha', 
         slug: 'macaronVanilla', 
         image: macaronVanilla,
-        description: '' 
+        description: 'Macaron sabor Baunilha.' 
       },
       { 
         id: 'macaron7',
-        name: 'マカロンショコラ', 
+        name: 'Macaron de Chocolate', 
         slug: 'macaronChocolate', 
         image: macaronChocolate,
-        description: '' 
+        description: 'Macaron sabor Chocolate.' 
       },
     ],
   },
   {
-    name: '焼菓子',
+    name: 'Yakugashi (Doces assados)',
     slug: 'yakugashiLayer',
     image: yakugashiLayer,
     products: [
       { 
         id: 'yak1',
-        name: '焼菓子1-フロランタン', 
+        name: 'Florentin', 
         slug: 'yakugashi', 
         image: yakugashiFlorentine,
-        description: '' 
+        description: 'Biscoito crocante feito com amêndoas caramelizadas e uma base amanteigada, com textura delicada e sabor equilibrado entre o doce e o tostado. ' 
       },
       {
         id: 'yak2', 
-        name: 'プレーン', 
+        name: 'Plain', 
         slug: 'yakugashiPlain', 
         image: yakugashiPlain,
-        description: '' 
+        description: 'Sabor natural, sem adição de ingredientes extras.' 
       },
       {
         id: 'yak3', 
-        name: 'ピスタチオ', 
+        name: 'Pistache', 
         slug: 'yakugashiPistachio', 
         image: yakugashiPistachio,
         description: '' 
       },
       {
         id: 'yak4', 
-        name: 'シュタンゲン', 
+        name: 'Shtangen', 
         slug: 'Stangen', 
         image: yakugashiStangen,
         description: '' 
       },
       {
         id: 'yak5', 
-        name: 'マーブル', 
+        name: 'Marble', 
         slug: 'yakugashiMarble', 
         image: yakugashiMarble,
         description: '' 
       },
       {
         id: 'yak6', 
-        name: 'ガレット', 
+        name: 'Galette', 
         slug: 'yakugashiGalette', 
         image: yakugashiGalette,
         description: '' 
       },
       {
         id: 'yak7', 
-        name: 'シナモン', 
+        name: 'Canela', 
         slug: 'yakugashiCinnamon', 
         image: yakugashiCinnamon,
         description: '' 
       },
       {
         id: 'yak8', 
-        name: 'チョコチップ', 
+        name: 'Gotas de chocolate', 
         slug: 'yakugashiChocolateChip', 
         image: yakugashiChocolateChip,
         description: '' 
       },
       {
         id: 'yak9', 
-        name: 'ココナッツ', 
+        name: 'Cacau', 
         slug: 'yakugashiCoconut', 
         image: yakugashiCoconut,
         description: '' 
       },
       {
         id: 'yak10', 
-        name: 'コロンボ', 
+        name: 'Colombo', 
         slug: 'yakugashiColombo', 
         image: yakugashiColombo,
         description: '' 
       },
       {
         id: 'yak11', 
-        name: 'くるみ', 
+        name: 'Kurumi', 
         slug: 'yakugashiKurumi', 
         image: yakugashiKurumi,
         description: '' 
       },
       {
         id: 'yak12', 
-        name: 'アーモンド', 
+        name: 'Almond', 
         slug: 'yakugashiAlmond', 
         image: yakugashiAlmond,
         description: '' 
       },
       {
         id: 'yak13', 
-        name: 'マカダミア', 
+        name: 'Macadamia', 
         slug: 'yakugashiMacadamia', 
         image: yakugashiMacadamia,
         description: '' 
       },
       {
         id: 'yak14', 
-        name: 'ヌス', 
+        name: 'Nuss', 
         slug: 'yakugashiNuss', 
         image: yakugashiNuss,
         description: '' 
@@ -470,44 +470,44 @@ export const categories = [
     ],
   },
   {
-    name: '半生菓子',
+    name: 'Hannamagashi – Doce japonês semiúmido',
     slug: 'Semi-moist Japanese sweets',
     image: hanNGashiCapaImgLayer,
     products: [
       { 
         id: 'hNGashi1',
-        name: '昭和４０年代マドレーヌ', 
+        name: 'Madeleine dos anos 1970', 
         slug: 'hanNGashi1960s', 
         image: hanNGashi1960s,
-        description: '' 
+        description: 'Um bolinho clássico que remete aos sabores simples e acolhedores da década de 70. Feita com ingredientes tradicionais, tem textura macia, leve aroma de manteiga e um toque de nostalgia em cada mordida.' 
       },
       { 
         id: 'hNGashi2',
-        name: 'フィナンシェ', 
+        name: 'Financier', 
         slug: 'hanNGashiFinancier', 
         image: hanNGashiFinancier,
-        description: '' 
+        description: 'Bolo francês amanteigado com farinha de amêndoas e manteiga dourada, de textura macia por dentro e levemente crocante por fora. ' 
       },
       { 
         id: 'hNGashi3',
-        name: 'プライムショコラフィナンシェ', 
+        name: 'Prime Chocolat Financier', 
         slug: 'hanNGashiChocolate', 
         image: hanNGashiChocolate,
-        description: '' 
+        description: 'Financier clássico com toque premium de chocolate, combinando a textura amanteigada e macia com a intensidade do cacau selecionado.' 
       },
       { 
         id: 'hNGashi4',
-        name: 'プライムフィナンシェ', 
+        name: 'Financier Premium', 
         slug: 'hanNGashiPrimeFinancier', 
         image: hanNGashiPrimeFinancier,
-        description: '' 
+        description: 'Financier clássico aprimorado, feito com ingredientes selecionados para uma textura mais rica e sabor refinado.' 
       },
       { 
         id: 'hNGashi5',
-        name: 'コキラージュ', 
+        name: 'Cocillage', 
         slug: 'hanNGashiCochillage', 
         image: hanNGashiCochillage,
-        description: '' 
+        description: 'Doce inspirado nas formas das conchas do mar, combinando texturas suaves e sabores refinados que evocam a leveza e a beleza da natureza.' 
       },
     ],
   },

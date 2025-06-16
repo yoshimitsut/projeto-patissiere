@@ -22,7 +22,7 @@ export default function Chef() {
         Chef Yuji Higa
       </motion.h1>
 
-      {/* Tópico 1: Biografia com 2 colunas */}
+      {/* Tópico 1: Biografia */}
       <motion.div
         className="grid md:grid-cols-2 gap-12 mb-16"
         initial="hidden"
@@ -34,11 +34,11 @@ export default function Chef() {
         <div className="text-gray-800">
           <h2 className="text-xl font-bold mb-2">Biografia</h2>
           <ul className="list-disc pl-5">
-            <li>Nascido em 1979, Vila Nakagusuku, Prefeitura de Okinawa</li>
-            <li>2000: Formado pela Osaka Abeno Tsuji Pâtisserie College</li>
-            <li>2000: Ingressou na Pâtisserie T. YOKOGAWA, trabalhando sob a tutela do Mestre Tetsuya Yokogawa por 15 anos</li>
-            <li>2009: Professor visitante na Hagoromo International University</li>
-            <li>2015: Professor visitante na Daiku Professional School</li>
+            <li>Nascido em 1979 na Vila Nakagusuku, Okinawa</li>
+            <li>2000: Formado em Osaka Abeno Tsuji Pâtisserie College</li>
+            <li>2000: Ingressou na Pâtisserie T. YOKOGAWA, trabalhando sob a tutela de Tetsuya Yokogawa por 15 anos</li>
+            <li>2009: Professor em Hagoromo International University</li>
+            <li>2015: Professor em Daiku Professional School</li>
             <li>Março de 2016: Abriu a Pâtisserie H. Yuji</li>
           </ul>
         </div>
@@ -52,7 +52,7 @@ export default function Chef() {
         </div>
       </motion.div>
 
-      {/* Tópico 2: Premiações com 1 coluna */}
+      {/* Tópico 2: Premiações */}
       <motion.div
         className="grid grid-cols-1 gap-12 mb-16"
         initial="hidden"

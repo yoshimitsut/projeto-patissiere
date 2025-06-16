@@ -18,7 +18,7 @@ export default function Access() {
         transition={{ duration: 0.6 }}
         variants={fadeIn}
       >
-        - 店舗情報 -
+        - Informações -
       </motion.h1>
       <motion.div
               className="grid md:grid-cols-2 gap-12 mb-16"
@@ -29,13 +29,13 @@ export default function Access() {
               variants={fadeIn}
             >
               <div className="text-gray-800">
-                <h2 className="text-xl font-bold mb-2">- 店舗情報 -</h2>
+                <h2 className="text-xl font-bold mb-2">- Nossa Loja -</h2>
                 <ul className="list-disc pl-5">
-                  <li>所在地:</li>
-                  <li>〒901-2227 沖縄県宜野湾市宇地泊２丁目１０−４０</li>
+                  <li>Endereço:</li>
+                  <li>〒901-2227 Rua Uchidomari, Cidade de Ginowan, Província de Okinawa, número 2-10-40</li>
                   <li>TEL: 098-917-2011</li>
-                  <li>営業時間: 10:00～19:00</li>
-                  <li>定休日: 月曜日 （祝日の場合は翌火曜日休み）</li>
+                  <li>Horário de funcionamento: 10:00～19:00</li>
+                  <li>Não abrimos nas Segundas-feiras </li>
                   
                 </ul>
               </div>
@@ -59,10 +59,10 @@ export default function Access() {
             >
             
             <div className="text-gray-800">
-                <h2 className="text-xl font-bold mb-2">- アクセス -</h2>
+                <h2 className="text-xl font-bold mb-2">- Acesso -</h2>
                 <ul className="list-disc pl-5">
-                  <li>バス    バス停（大謝名）より徒歩2分</li>
-                  <li>駐車場   6台</li>
+                  <li>2 minutos a pé do ponto de ônibus (Ojana)</li>
+                  <li>Temos estacionamento para 6 carros.</li>
                 </ul>
               </div>
         {/* Mapa do Google */}

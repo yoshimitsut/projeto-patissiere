@@ -16,18 +16,10 @@ export default function About() {
       className="w-full bg-no-repeat bg-top flex flex-col items-center"
       style={{
         backgroundImage: `url(${bgImage})`,
-        //backgroundSize: 'cover',
         backgroundPosition: 'top',
         margin: '-23px 0 0 0'
       }}
     >
-      {/* TOPO COM BACKGROUND VISÍVEL */}
-      <div className="h-40 w-full flex items-center justify-center">
-        {/* Se quiser título aqui, descomente abaixo */}
-        {/* <h1 className="text-white text-4xl font-bold drop-shadow-lg">Título Topo</h1> */}
-      </div>
-
-      {/* CONTEÚDO CENTRAL */}
       <div className="bg-white bg-opacity-90 p-10 sm:p-16 max-w-4xl w-full mx-auto shadow-2xl rounded-2xl mb-16">
         <motion.h1
           className="text-3xl font-bold text-center text-gray-700 mb-12"
@@ -52,11 +44,11 @@ export default function About() {
           <div className="text-gray-800">
             <h2 className="text-xl font-bold mb-2">Doces</h2>
             <p>
-              Entre as frutas selecionadas e os diversos ingredientes disponíveis,
-              combinamos os materiais e expressamos os cinco sabores com nossa própria sensibilidade.
+              Entre as frutas selecionadas e os diversos ingredientes,
+              combinamos os produtos e expressamos os cinco sabores com nossa própria sensibilidade.
               Mesmo usando os mesmos ingredientes, é difícil fazer exatamente o mesmo doce.
               No entanto, como profissionais, enfrentamos esses desafios diariamente,
-              nos dedicando e aprimorando constantemente em contato com os ingredientes.
+              nos dedicando e aprimorando constantemente os sabores.
             </p>
           </div>
           <div className="flex items-center justify-center">
@@ -94,12 +86,12 @@ export default function About() {
               Mesmo os melhores ingredientes precisam de mãos e corações atentos para revelar todo o seu potencial.
               Por isso, valorizamos profundamente não apenas o que usamos, mas como usamos.
               <br /><br />
-              Nosso processo começa muito antes do doce chegar à vitrine —
+              Nosso processo começa muito antes do doce chegar à vitrine,
               começa no respeito por quem produz, na escolha consciente de cada insumo
               e no desejo sincero de proporcionar uma experiência única a quem saboreia.
               <br /><br />
               Carregamos conosco os valores dos produtores, a dedicação da nossa equipe e o compromisso de emocionar.
-              Mais do que doces: entregamos histórias feitas com alma.
+              Mais do que doces: entregamos histórias feitas com a alma.
             </p>
           </div>
         </motion.div>
@@ -126,7 +118,7 @@ export default function About() {
                 <strong>Açúcar:</strong> de cana de Okinawa, mais sabor e umidade.
               </li>
               <li>
-                <strong>Ovos:</strong> locais, para leveza e sabor rico.
+                <strong>Ovos:</strong> locais, para leveza e um rico sabor.
               </li>
               <li>
                 <strong>Chocolate:</strong> importado, com destaque ao belga.
