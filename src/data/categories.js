@@ -470,7 +470,7 @@ export const categories = [
     ],
   },
   {
-    name: 'Hannamagashi – Doce japonês semiúmido',
+    name: 'Hannamagashi (Doce japonês semiúmido)',
     slug: 'Semi-moist Japanese sweets',
     image: hanNGashiCapaImgLayer,
     products: [
